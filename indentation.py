@@ -3,6 +3,16 @@ print('Indentation refers to the spaces at the beginning of a code line. Where i
 if 5 > 2:
     print('Yes')
 
+if 5 > 2:
+     print("Five is greater than two!") 
+
+if 5 > 2:
+        print("Five is greater than two!") 
+
 # Error
 # if 5 > 2:
 # print('Yes') 
+
+# if 5 > 2:
+#      print("Five is greater than two!")
+#         print("Five is greater than two!")
