@@ -1,5 +1,6 @@
 print('Text Type:	str')
 print('Numeric Types:	int, float, complex')
+print('จำนวนเชิงซ้อน (อังกฤษ : complex number)')
 print('Sequence Types:	list, tuple, range')
 print('Mapping Type:	dict')
 print('Boolean Type:	bool')
