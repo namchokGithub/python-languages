@@ -79,3 +79,20 @@ print(myorder.format(quantity, itemno, price))
 myorder = "I want to pay {2} dollars for {0} pieces of item {1}"
 print(myorder.format(quantity, itemno, price))
 
+# Escape Character
+txt = "We are the so-called \"Vilings\" from the north"
+print(txt)
+txt = "We are the so-called \'Vilings\' from the north"
+print(txt)
+txt = "We are the so-called \\Vilings\\ from the north"
+print(txt)
+txt = "We are the so-called \nVilings\n from the north"
+print(txt)
+txt = "We are the so-called \rVilings\r from the north"
+print(txt)
+txt = "We are the so-called \tVilings\t from the north"
+print(txt)
+txt = "We are the so-called \bVilings\b from the north"
+print(txt)
+txt = "We are the so-called \fVilings\f from the north"
+print(txt)
