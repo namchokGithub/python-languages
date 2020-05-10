@@ -47,5 +47,12 @@ print(a.replace("H", "K"))
 # The split() method splits the string into substrings if it finds instances of the separator
 print(a.split(","))
 
+# Check String
+txt = "The rain in Spain stays mainly in the plain"
 
+x = "ain" in txt
+print(x)
+
+x = "ain" not in txt
+print(x)
 
