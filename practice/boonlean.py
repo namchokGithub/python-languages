@@ -59,3 +59,7 @@ if myFunction():
     print("Yes!!")
 else:
     print("No!!")
+
+print("=== Function isinstance ===")
+x = 200
+print(isinstance(x, int))
