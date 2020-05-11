@@ -24,3 +24,11 @@ y = 15
 
 print(bool(x))
 print(bool(y))
+
+# Most Values are True
+
+bool("abc")
+bool(123)
+bool(["apple", "cherry", "banana"])
+# print true
+
