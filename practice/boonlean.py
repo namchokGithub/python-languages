@@ -47,3 +47,15 @@ class myclass():
 
 myobj = myclass()
 print(bool(myobj))
+
+# Functions can Return a Boolean
+print("\n === Functions can Return a Boolean === \n")
+def myFunction():
+    return True
+
+print(myFunction())
+
+if myFunction():
+    print("Yes!!")
+else:
+    print("No!!")
