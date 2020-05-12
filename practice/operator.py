@@ -14,6 +14,27 @@ print(2**2)
 print(12//5)
 
 print("=== Python Assignment Operators ===")
+
+# x=4
+# x+=3
+# x-=3
+# x*=4
+# x/=2
+# x%=1
+# x//=2
+# x**=2
+
+# x=10
+# x&=2
+# x|=5
+
+x=5
+# x^=2
+x>>=3
+x<<=3
+
+print(x)
+
 print("=== Python Comparison Operators ===")
 print("=== Python Logical Operators ===")
 print("=== Python Identity Operators ===")
