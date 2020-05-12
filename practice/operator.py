@@ -51,5 +51,21 @@ if 2<=3:
     print(True)
 
 print("=== Python Logical Operators ===")
+
+if 2==3 and 3==3:
+    print(True)
+
+if 2==3 or 3==3:
+    print(True)
+
+if not(2==3 and 3==3):
+    print(True)
+
 print("=== Python Identity Operators ===")
+
+x = ['van', 'bmw']
+print('banana' in x)
+print('van' in x)
+print('banana' not in x)
+
 print("=== Python Membership Operators ===")
