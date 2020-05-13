@@ -42,3 +42,20 @@ print(len(thislist))
 print("=== Add items ===")
 thislist.append("orange")
 print(thislist)
+
+thislist.insert(1, "mango")
+print(thislist)
+
+print("=== Remove Items ===")
+thislist.remove('mango')
+print(thislist)
+thislist.pop()
+print(thislist)
+del thislist[0]
+print(thislist)
+del thislist
+
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
