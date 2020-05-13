@@ -26,3 +26,8 @@ print("=== Change Item Value ===")
 
 thislist[1] = "blackcurrent"
 print(thislist)
+
+print("=== Loop Through a List ===")
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+    print(x)
