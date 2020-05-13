@@ -34,4 +34,7 @@ for x in thislist:
 
 print("=== Check if Item Exists ===")
 if "apple" in thislist:
-        print("Yes, 'apple' is in the fruits list")
+    print("Yes, 'apple' is in the fruits list")
+
+print("=== List Length ===")
+print(len(thislist))
