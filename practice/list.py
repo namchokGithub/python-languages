@@ -31,3 +31,7 @@ print("=== Loop Through a List ===")
 thislist = ["apple", "banana", "cherry"]
 for x in thislist:
     print(x)
+
+print("=== Check if Item Exists ===")
+if "apple" in thislist:
+        print("Yes, 'apple' is in the fruits list")
