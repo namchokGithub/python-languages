@@ -14,4 +14,5 @@ print(thislist[1])
 print(thislist[-1])
 
 # Range of Indexes
-print()
+thislist = ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango']
+print(thislist[2:5])
