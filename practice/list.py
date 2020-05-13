@@ -38,3 +38,7 @@ if "apple" in thislist:
 
 print("=== List Length ===")
 print(len(thislist))
+
+print("=== Add items ===")
+thislist.append("orange")
+print(thislist)
