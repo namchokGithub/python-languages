@@ -59,3 +59,13 @@ thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
 
+print("=== Copy list ===")
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+mylist.clear()
+mylist = list(thislist)
+print(mylist)
+
+
