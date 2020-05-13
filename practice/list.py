@@ -83,4 +83,8 @@ print(list1)
 list3.extend(list2)
 print(list3)
 
+print("=== List constructor ===")
+thislist = list(("apple", "banana", "cherry"))
+
+print(thislist)
 
