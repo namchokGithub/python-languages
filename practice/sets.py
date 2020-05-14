@@ -40,3 +40,13 @@ print(set1)
 set1.clear()
 
 del set1
+
+print("=== Join Two sets ===")
+
+set1 = {"1", "2"}
+set2 = {3, 4}
+set3 = set1.union(set2)
+print(set3)
+
+set3.update(set2)
+print(set3)
