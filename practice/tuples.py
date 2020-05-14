@@ -25,3 +25,27 @@ x = tuple(y)
 
 print(x)
 
+print("=== Loop Through a tuple ===")
+for x in thistuple:
+    print(x)
+
+print("=== Check if Item Exists ===")
+if "apple" in thistuple:
+    print("I have an apple")
+
+print(len(thistuple))
+
+#  !Once a tuple is created, YOU cannot add items to it.
+
+print("=== Create Tuple with One item ===")
+realTuple = ("apple", )
+fakeTuple = ("apple")
+
+print(type(realTuple))  # Tuple
+print(type(fakeTuple))  # String
+
+print("=== Remove Items ===")
+# !Tuples are UNCHANGEABLE, so you cannot remove ITEMS from it, but you can delete the tuble completely
+
+del realTuple
+
