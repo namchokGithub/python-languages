@@ -17,3 +17,11 @@ print(thistuple[2:4])
 # Range of Negative Indexes
 print(thistuple[-4:-2])
 
+print("=== Change Tuple Values ===")
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
