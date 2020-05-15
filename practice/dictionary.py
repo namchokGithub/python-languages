@@ -49,4 +49,21 @@ if "model" in thisdict:
 print("=== Dictionary Length ===")
 print(len(thisdict))
 
+print("=== Adding Items ===")
+
+thisdict["color"] = "red"
+print(thisdict)
+
+print("=== Removing Items ===")
+thisdict.pop("model")
+print(thisdict)
+
+thisdict.popitem()
+print(thisdict)
+
+del thisdict["year"]
+print(thisdict)
+
+# or method => dict.clear()
+
 
