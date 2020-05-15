@@ -77,3 +77,45 @@ thisdict = {
 mydict = thisdict.copy()
 # or 
 mydict = dict(thisdict)
+
+print("=== Nasted Dictionary ===")
+
+myfamily = {
+    "child1": {
+        "name": "Emil"
+        ,"year": 2004
+    },
+    "child2": {
+        "name": "Tobies"
+        ,"year": 2007
+    },
+    "child3": {
+        "name": "Linus"
+        ,"year": 2011
+    }
+}
+
+print(myfamily)
+
+# or
+
+child1 = {
+    "name" : "a",
+    "year" : 1
+}
+child2 = {
+    "name" : "b",
+    "year" : 2
+}
+child3 = {
+    "name" : "c",
+    "year" : 3
+}
+
+myfamily2 = {
+    "child1": child1,
+    "child2": child2,
+    "child3": child3
+}
+
+print(myfamily2)
