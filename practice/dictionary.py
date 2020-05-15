@@ -17,3 +17,9 @@ x = thisdict["model"]
 print(x)
 x = thisdict.get("brand")
 print(x)
+
+print("=== Change Values ===")
+
+print(thisdict.get("year"))
+thisdict["year"] = 1999
+print(thisdict.get("year"))
