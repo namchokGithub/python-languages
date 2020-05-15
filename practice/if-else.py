@@ -35,3 +35,29 @@ print("A") if a < b else print("B")
 
 # you can also have multiple else statements on the same line.
 print("A") if a > b else print("=") if a == b else print("B")
+
+print("=== And ===")
+
+a = 200
+b = 33 
+c = 500
+
+if a>b and c>a:
+    print("Both conditions are True")
+
+print("=== Or ===")
+
+if a > b or a > c:
+    print("At least one of the conditions is true")
+
+print("=== Nested if ===")
+
+x = 41
+if x > 10:
+    print("Above ten,")
+    if x > 20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
+
+    
