@@ -60,4 +60,16 @@ if x > 10:
     else:
         print("but not above 20.")
 
-    
+print("=== The pass Statement ===")
+
+a = 5
+b = 2
+
+if a > b:
+    pass
+    # The pass statement to avoid getting an error
+    print("a is greater b")
+else:
+    print("a is less than b")
+
+print("=== End === (form pass)")
