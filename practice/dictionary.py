@@ -37,3 +37,16 @@ for x in thisdict.values():
 
 for x, y in thisdict.items():
     print(x, y) # print keys and values
+
+print("=== Check if Key Exists ===")
+
+if "mhee" in thisdict: 
+    print("Yesss - 1")
+
+if "model" in thisdict: 
+    print("Yesss - 2")
+
+print("=== Dictionary Length ===")
+print(len(thisdict))
+
+
