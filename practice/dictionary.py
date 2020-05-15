@@ -66,4 +66,14 @@ print(thisdict)
 
 # or method => dict.clear()
 
+print("=== Copy a Dictionary ===")
 
+thisdict = {
+    "brand": "Ford"
+    ,"model": "Mustang"
+    ,"year": 1964
+}
+
+mydict = thisdict.copy()
+# or 
+mydict = dict(thisdict)
