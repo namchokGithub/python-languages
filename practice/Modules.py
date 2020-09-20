@@ -2,8 +2,14 @@
 # https://www.w3schools.com/python/python_modules.asp
 
 # Example Import module
-import mymodule
+# import mymodule
 # mymodule.greeting("Namchok")
 
-a = mymodule.person1["age"]
+# Import variables
+# a = mymodule.person1["age"]
+# print(a)
+
+# Re-naming a Module
+import mymodule as ax
+a = ax.person1["age"]
 print(a)
