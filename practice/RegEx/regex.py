@@ -104,103 +104,179 @@ import re
 # else:
 #   print("No match")
 
-#### Metacharacters
+# #### Metacharacters
+# txt = "The rain in Spain"
+# # Check if the string starts with "The":
+# # Returns a match if the specified characters are at the beginning of the string
+# x = re.findall("\AThe", txt)
+# print(x)
+# if x:
+#   print("Yes, there is a match!")
+# else:
+#   print("No match")
+
+# # Check if "ain" is present at the beginning of a WORD:
+# # Returns a match where the specified characters are at the beginning or at the end of a word
+# # (the "r" in the beginning is making sure that the string is being treated as a "raw string")
+# x = re.findall(r"\bain", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# x = re.findall(r"ain\b", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Check if "ain" is present, but NOT at the beginning of a word:
+# # Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+# # (the "r" in the beginning is making sure that the string is being treated as a "raw string")
+# x = re.findall(r"\Bain", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Check if the string contains any digits (numbers from 0-9):
+# # Returns a match where the string contains digits (numbers from 0-9)
+# x = re.findall("\d", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Return a match at every no-digit character:
+# # Returns a match where the string DOES NOT contain digits
+# x = re.findall("\D", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Returns a match where the string contains a white space character
+# x = re.findall("\s", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Returns a match where the string DOES NOT contain a white space character
+# x = re.findall("\S", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Returns a match where the string contains any word characters 
+# # (characters from a to Z, digits from 0-9, and the underscore _ character)
+# x = re.findall("\w", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Returns a match where the string DOES NOT contain any word characters
+# # Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+# x = re.findall("\W", txt)
+# print(x)
+# if x:
+#   print("Yes, there is at least one match!")
+# else:
+#   print("No match")
+
+# # Returns a match if the specified characters are at the end of the string
+# # Check if the string ends with "Spain":
+# x = re.findall("Spain\Z", txt)
+# print(x)
+# if x:
+#   print("Yes, there is a match!")
+# else:
+#   print("No match")
+
+### Set
 txt = "The rain in Spain"
-# Check if the string starts with "The":
-# Returns a match if the specified characters are at the beginning of the string
-x = re.findall("\AThe", txt)
-print(x)
-if x:
-  print("Yes, there is a match!")
-else:
-  print("No match")
 
-# Check if "ain" is present at the beginning of a WORD:
-# Returns a match where the specified characters are at the beginning or at the end of a word
-# (the "r" in the beginning is making sure that the string is being treated as a "raw string")
-x = re.findall(r"\bain", txt)
+# Returns a match where one of the specified characters (a, r, or n) are present
+# Check if the string has any a, r, or n characters:
+x = re.findall("[arn]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-x = re.findall(r"ain\b", txt)
+# Check if the string has any characters between a and n:
+# Returns a match for any lower case character, alphabetically between a and n
+x = re.findall("[a-n]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Check if "ain" is present, but NOT at the beginning of a word:
-# Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
-# (the "r" in the beginning is making sure that the string is being treated as a "raw string")
-x = re.findall(r"\Bain", txt)
+# Check if the string has other characters than a, r, or n:
+# Returns a match for any character EXCEPT a, r, and n
+x = re.findall("[^arn]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Check if the string contains any digits (numbers from 0-9):
-# Returns a match where the string contains digits (numbers from 0-9)
-x = re.findall("\d", txt)
+# Check if the string has any 0, 1, 2, or 3 digits:
+# Returns a match where any of the specified digits (0, 1, 2, or 3) are present
+x = re.findall("[0123]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Return a match at every no-digit character:
-# Returns a match where the string DOES NOT contain digits
-x = re.findall("\D", txt)
+txt = "8 times. before 11:45 AM"
+
+# Check if the string has any digits:
+# Returns a match for any digit between 0 and 9
+x = re.findall("[0-9]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Returns a match where the string contains a white space character
-x = re.findall("\s", txt)
+# Check if the string has any two-digit numbers, from 00 to 59:
+# Returns a match for any two-digit numbers from 00 and 59
+x = re.findall("[0-5][0-9]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Returns a match where the string DOES NOT contain a white space character
-x = re.findall("\S", txt)
+# Check if the string has any characters from a to z lower case, and A to Z upper case:
+# Returns a match for any character alphabetically between a and z, lower case OR upper case
+x = re.findall("[a-zA-Z]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
 
-# Returns a match where the string contains any word characters 
-# (characters from a to Z, digits from 0-9, and the underscore _ character)
-x = re.findall("\w", txt)
+# Check if the string has any + characters:
+# In sets, +, *, ., |, (), $,{} has no special meaning, 
+# so [+] means: return a match for any + character in the string
+x = re.findall("[+.]", txt)
 print(x)
 if x:
   print("Yes, there is at least one match!")
 else:
   print("No match")
-
-# Returns a match where the string DOES NOT contain any word characters
-# Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
-x = re.findall("\W", txt)
-print(x)
-if x:
-  print("Yes, there is at least one match!")
-else:
-  print("No match")
-
-# Returns a match if the specified characters are at the end of the string
-# Check if the string ends with "Spain":
-x = re.findall("Spain\Z", txt)
-print(x)
-if x:
-  print("Yes, there is a match!")
-else:
-  print("No match")
-
-  
